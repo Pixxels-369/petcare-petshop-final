@@ -1,0 +1,496 @@
+/* Reset de padrões do navegador
+   Remove margens e espaçamentos padrões do navegador. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sessões: Cabeçalho, Hero, Sobre, Serviços, Contato, Footer */
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Títulos utilizam a fonte Fredoka para manter a identidade
+   visual mais amigável. */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Fredoka", sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #176b68;
+}
+
+/* Container geral da página - limita a largura do conteúdo. */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.amarelo {
+    color: #f4c542;
+}
+
+/* CABEÇALHO */
+
+.logotipo {
+    font-family: "Fredoka", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #176b68;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+/* Menu de navegação */
+.cabecalho .menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Links do menu */
+.cabecalho .menu a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #176b68;
+}
+
+/* HERO */
+
+.hero {
+    padding: 40px 0;
+    margin: 10px 20px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #176b68;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero_flex_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Texto da Hero */
+.hero_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Botões da Hero */
+.hero .hero_acoes {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+/* A imagem fica posicionada de forma absoluta dentro da Hero. */
+.hero_imagem img {
+    width: 330px;
+    position: absolute;
+    bottom: 150px;
+    top: 30px;
+    right: 180px;
+}
+
+/* Botão principal */
+.hero .hero_acoes .botao_primario {
+    padding: 20px 24px;
+    background: #f4c542;
+    color: #176b68;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Link secundário */
+.hero .hero_acoes a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* SOBRE */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+/* Área do conteúdo da seção Sobre. */
+.sobre_info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.sobre_info .sobre_conteudo {
+    flex: 1;
+}
+
+/* Indicadores */
+.sobre_indicadores {
+    display: flex;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+/* Indicador individual */
+.sobre_indicadores .sobre_indicador_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sobre_indicadores .sobre_indicador_item strong {
+    font-family: "Fredoka", sans-serif;
+    font-size: 40px;
+    color: #176b68;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    padding: 60px 0;
+    background: #fdfdfd;
+}
+
+.titulo_secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grade dos cards */
+.grade_servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Card de serviço */
+.card_servico {
+    font-size: 20px;
+    background: #f4c542;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #104746;
+    gap: 15px;
+}
+
+/* Ícones dos serviços */
+.icone_servico {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 25px;
+    color: #104746;
+}
+
+/* CONTATO */
+
+.contato {
+    background: #155e5b;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.contato .titulo_secao {
+    color: #f4c542;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+/* Informações de contato */
+.contato_info p {
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Área de contato */
+.contato_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    align-items: center;
+}
+
+.contato_info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 60px;
+}
+
+/* Formulário */
+.contato_formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 300px;
+    background: #176b68;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* Campos do formulário */
+.contato_formulario input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #176b68;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s;
+    border: 2px solid #ffffff33;
+}
+
+.contato_formulario input::placeholder {
+    color: #888;
+}
+
+/* Área de mensagem */
+.contato_formulario textarea {
+    padding: 18px;
+    border: 2px solid #ffffff33;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #176b68;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.contato_formulario input:hover {
+    border-color: #f4c542;
+}
+
+.contato_formulario textarea:hover {
+    border-color: #f4c542;
+}
+
+.contato_formulario textarea::placeholder {
+    color: #888;
+}
+
+/* Botão enviar mensagem */
+.contato_formulario button {
+    width: 100%;
+    border: 0;
+    background: #f4c542;
+    color: #176b68;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efeito do botão */
+.contato_formulario button:hover {
+    background: #ffdb70;
+}
+
+/* FOOTER */
+
+.rodape {
+    background: #114746;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding: 40px 0;
+}
+
+
+/* RESPONSIVIDADE */
+
+/* CELULAR - até 768px */
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    .logotipo {
+        font-size: 28px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero .hero_conteudo {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Imagem do Hero no celular */
+    .hero_imagem {
+        display: block;
+    }
+
+    .hero_imagem img {
+        width: 130px;
+        position: static;
+        display: block;
+        margin: 15px auto 0;
+    }
+
+    .hero_flex_container {
+        flex-direction: column;
+    }
+
+    /* Botões da Hero no celular */
+    .hero .hero_acoes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero .hero_acoes .botao_primario {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    /* Sobre */
+    .sobre h2 {
+        font-size: 28px;
+    }
+
+    .sobre_conteudo p {
+        font-size: 14px;
+    }
+
+    .sobre_info {
+        flex-direction: column;
+    }
+
+    /* Indicadores */
+    .sobre_indicadores .sobre_indicador_item strong {
+        font-size: 22px;
+    }
+
+    .sobre_indicadores .sobre_indicador_item>span {
+        font-size: 12px;
+    }
+
+    /* Serviços */
+    .servicos .titulo_secao {
+        font-size: 28px;
+    }
+
+    .servicos .grade_servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicos .card_servico {
+        font-size: 14px;
+        padding: 25px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .servicos .icone_servico {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+
+    /* Contato */
+    .contato .titulo_secao {
+        font-size: 28px;
+    }
+
+    .contato_info p {
+        font-size: 14px;
+    }
+}
+
+/* TABLET - de 769px até 1024px */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Serviços no tablet */
+    .servicos .grade_servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .servicos .card_servico {
+        font-size: 19px;
+        padding: 25px;
+        min-width: 220px;
+        max-width: 300px;
+    }
+
+    .servicos .icone_servico {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Atribuição de imagem */
+.atribuicao_imagem {
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.atribuicao_imagem a {
+    color: #ffffff;
+    text-decoration: none;
+}
