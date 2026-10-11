@@ -2,7 +2,7 @@
 
  **Tipo:** Landing page responsiva para petshop.
 
- **Autor:** Maria Tereza da Silva
+ **Autor:** TSilva
 ---
 
 ## 1. Objetivo do Projeto
